@@ -10,11 +10,9 @@ function comparisions() {
   } else if (b.length > c.length && b.length > a.length && b.lenght > d.length) {
     biggest += b;
   } else if(c.length > a.length && c.length > b.length && c.length > d.length) {
-    {
       biggest +=c;
-    }
-    else{
-    biggest += d;
+  }else{
+  biggest += d;
   }
   
   document.getElementById("result").innerHTML = name+" , the biggest String among four is " +biggest;
