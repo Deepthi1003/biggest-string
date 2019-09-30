@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=2">
 
   <title>Biggest of three Strings App</title>
 
   <meta name="description" content="Client Side App">
-  <meta name="author" content="Vijay Kumar">
+  <meta name="author" content="Deepthi Tejaswani Chokka">
 
   <!-- get current Bootstrap Material Design styles from https://mdbootstrap.com/md-bootstrap-cdn/ -->
 
@@ -23,7 +23,7 @@
   <style>
     body,
     .sticky-footer-wrapper {
-      min-height: 100vh;
+      min-height: 200vh;
     }
   </style>
 
@@ -41,29 +41,34 @@
       <!--Rows have columns - column 1 (7/12) -->
       <div class="col-md-7 mb-4">
 
-        <h2>Biggest of three strings app!</h2>
+        <h2>Biggest of four strings app!</h2>
         <hr>
 
         <fieldset class="mt-4">
           <label for="guest">Enter your name (2 to 40 characters):</label>
-          <input id="guest" type="text" minlength="2" maxlength="40" value="Vijay Kumar">
+          <input id="guest" type="text" minlength="2" maxlength="40" value="Deepthi Tejaswani">
         </fieldset>
 
         <fieldset class="mt-4">
           <label for="firststring">Enter first string:</label>
-          <input id="firststring" type="text" min="1" max="100" value="Dr.Case">
+          <input id="firststring" type="text" min="1" max="100" value="Nikitha">
           <span id="firstWarning" class="text-danger"></span>
         </fieldset>
 
         <fieldset class="mt-4">
           <label for="secondstring">Enter second string:</label>
-          <input id="secondstring" type="text" min="1" max="100" value="Dr.Rogers" >
+          <input id="secondstring" type="text" min="1" max="100" value="Alekya" >
           <span id="secondWarning" class="text-danger"></span>
         </fieldset>
         <fieldset class="mt-4">
           <label for="thirdstring">Enter third string:</label>
-          <input id="thirdstring" type="text" min="1" max="100" value="Vijay">
+          <input id="thirdstring" type="text" min="1" max="100" value="Manideep">
           <span id="thirdwarning" class="text-danger"></span>
+        </fieldset>
+        <fieldset class="mt-4">
+          <label for="fourthstring">Enter fourth string:</label>
+          <input id="fourthstring" type="text" min="1" max="100" value="Sushma">
+          <span id="fourthwarning" class="text-danger"></span>
         </fieldset>
 
       </div>
@@ -71,9 +76,9 @@
 
       <!--column 2 (5/12) -->
       <div class="col-md-5 mb-4">
-        <h2>Click below to find the biggest among three Strings:</h2>
+        <h2>Click below to find the biggest among four Strings:</h2>
         <hr>
-        <button id="addButton" class="btn btn-primary" onclick=myfunction()>click</button>
+        <button id="addButton" class="btn btn-primary" onclick=comparisions()>click</button>
         <hr>
         <p id="result"></p>
 
